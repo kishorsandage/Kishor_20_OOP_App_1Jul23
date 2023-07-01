@@ -1,0 +1,31 @@
+@startuml
+
+class "Library Management System" {
+  - books: List<Book>
+  + addBook(book: Book)
+  + borrowBook(book: Book, user: User)
+  + returnBook(book: Book, user: User)
+  + getAvailableBooks(): List<Book>
+}
+
+class Book {
+  - title: String
+  - author: String
+  - available: Boolean
+}
+
+class User {
+  - name: String
+  - id: String
+}
+
+class LibraryCard {
+  - cardNumber: String
+  - expiryDate: Date
+}
+
+LibraryManagementSystem "uses" -down-> Book
+LibraryManagementSystem "uses" -down-> User
+User "uses" -down-> LibraryCard
+
+@enduml

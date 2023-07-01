@@ -1,0 +1,20 @@
+@startuml
+
+start
+:User selects a book to borrow;
+:System checks book availability;
+if (Book is available?) then (yes)
+  :Generate transaction ID;
+  :Update book availability to false;
+  :User borrows the book;
+  if (Any more books to borrow?) then (yes)
+    :Repeat the process;
+  else (no)
+    :End borrowing process;
+endif
+if (Book is available?) then (no)
+  :Inform user the book is not available;
+  :End borrowing process;
+endif
+
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+
+[*] --> Available
+
+Available --> Borrowed: borrowBook()
+Borrowed --> Available: returnBook()
+
+@enduml

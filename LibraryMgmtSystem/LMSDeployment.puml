@@ -1,0 +1,19 @@
+@startuml
+
+node "Web Server" {
+  component "Library Management System"
+}
+
+database "Database Server" {
+  folder "Books"
+}
+
+node "Client Device" {
+  actor User
+}
+
+User --> "Library Management System"
+"Library Management System" --> "Books"
+"Library Management System" --> "Database Server"
+
+@enduml

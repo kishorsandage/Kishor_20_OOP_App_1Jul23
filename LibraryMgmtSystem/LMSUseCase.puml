@@ -1,0 +1,25 @@
+@startuml
+
+left to right direction
+
+actor User
+actor Librarian
+actor Administrator
+
+rectangle "Library Management System" {
+  User --> (Add Book)
+  User --> (Borrow Book)
+  User --> (Return Book)
+  User --> (View Available Books)
+
+  Librarian --> (Add Book)
+  Librarian --> (Borrow Book)
+  Librarian --> (Return Book)
+  Librarian --> (View Available Books)
+
+  Administrator --> (Add Book)
+  Administrator --> (Remove Book)
+  Administrator --> (View Reports)
+}
+
+@enduml
