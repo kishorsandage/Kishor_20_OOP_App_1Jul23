@@ -1,0 +1,12 @@
+@startuml
+class Account {
+  - Account_SrNo: int
+  - acc_no: int
+  - username: str
+  - balance: float
+  + __init__(username: str, initialbalance: float)
+  + add_money(amount: float): void
+  + withdraw_money(amount: float): void
+  + view_details(): void
+}
+@enduml

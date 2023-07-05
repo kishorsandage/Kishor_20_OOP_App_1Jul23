@@ -1,0 +1,22 @@
+@startuml
+class BankAccountManagementSystem {
+  + create_account(username: str, initialbalance: float): Account
+  + deposit(account: Account, amount: float): void
+  + withdraw(account: Account, amount: float): void
+  + view_account_details(account: Account): void
+}
+
+class Account {
+  - accountNumber: int
+  - username: str
+  - balance: float
+  + __init__(username: str, initialbalance: float)
+  + get_account_number(): int
+  + get_username(): str
+  + get_balance(): float
+  + deposit(amount: float): void
+  + withdraw(amount: float): void
+}
+
+BankAccountManagementSystem --> Account
+@enduml
