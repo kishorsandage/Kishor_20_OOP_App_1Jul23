@@ -1,6 +1,7 @@
 1.	Library Management System: Create a library management system where users can add books, borrow and return books, and view available books.
 2.	Bank Account Management: Develop a bank account management system that allows users to create accounts, deposit and withdraw money, and view their account details.
 3.	Employee Management System: Build an employee management system that enables users to add employees, manage their information, and generate reports.
+3.1 Student Management system GUI as explained in Ardit course
 4.	Recipe Organizer: Create a recipe organizer that allows users to add, modify, and search for recipes based on various criteria.
 5.	Task Tracker: Develop a task tracker application that helps users create tasks, set deadlines, and track their progress.
 6.	Student Grade Calculator: Build a program that allows teachers to input students' grades and calculate their average, total score, and grade.
